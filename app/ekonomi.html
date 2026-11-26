@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekonomi — DataNusa · Statistik Indonesia</title>
+<meta name="description" content="PDB, pertumbuhan ekonomi, dan inflasi Indonesia dari BPS.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<span>Nusa</span></a>
+    <span class="tagline">Statistik Indonesia, satu pintu</span>
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="penduduk.html">Kependudukan</a>
+      <a href="sosial.html">Sosial</a>
+      <a href="perdagangan.html">Perdagangan</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Ekonomi Indonesia</h1>
+    <p class="lede">Perekonomian Indonesia tumbuh 5,11 persen pada 2025 — lebih cepat dari 5,03 persen
+    pada 2024 — dengan PDB Rp23.821,1 triliun dan PDB per kapita yang untuk pertama kalinya
+    menembus USD 5.000.</p>
+    <p class="updated">Sumber: BPS, Berita Resmi Statistik Pertumbuhan Ekonomi 2025 (rilis 5 Februari 2026).</p>
+  </div>
+
+  <div class="kpi-grid" aria-label="Angka utama ekonomi">
+    <div class="kpi">
+      <div class="kpi-label">Pertumbuhan 2025</div>
+      <div class="kpi-value">5,11 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS (c-to-c)</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">PDB 2025</div>
+      <div class="kpi-value">Rp23.821 <span class="kpi-unit">triliun</span></div>
+      <div class="kpi-source">BPS, harga berlaku</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">PDB per kapita</div>
+      <div class="kpi-value">Rp83,7 <span class="kpi-unit">juta</span></div>
+      <div class="kpi-source">BPS, 2025 · USD 5.083,4</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Inflasi 2025</div>
+      <div class="kpi-value">2,92 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, tahun kalender</div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Pertumbuhan dan besarnya ekonomi</h2>
+    <div class="card">
+      <h3>Pertumbuhan ekonomi, 2021–2025 (% y-on-y)</h3>
+      <div class="controls">
+        <span class="toggle-group" data-toggle-for="chart-growth">
+          <button type="button" data-chart-type="bar" aria-pressed="true">Batang</button>
+          <button type="button" data-chart-type="line" aria-pressed="false">Garis</button>
+        </span>
+        <button type="button" class="text-button" data-table-toggle="table-growth" aria-expanded="false">Tampilkan tabel data</button>
+      </div>
+      <div class="chart-box" id="chart-growth" data-chart="gdp-growth" data-type="bar"></div>
+      <p class="chart-source"></p>
+      <table class="data hidden" id="table-growth">
+        <thead><tr><th>Tahun</th><th class="num">Pertumbuhan (%)</th><th class="num">PDB (Rp triliun)</th></tr></thead>
+        <tbody>
+          <tr><td>2021</td><td class="num">3,70</td><td class="num">16.977</td></tr>
+          <tr><td>2022</td><td class="num">5,31</td><td class="num">18.587</td></tr>
+          <tr><td>2023</td><td class="num">5,05</td><td class="num">20.168</td></tr>
+          <tr><td>2024</td><td class="num">5,03</td><td class="num">22.074</td></tr>
+          <tr><td>2025</td><td class="num">5,11</td><td class="num">23.821</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>PDB atas dasar harga berlaku, 2021–2025 (Rp triliun)</h3>
+      <div class="controls">
+        <span class="toggle-group" data-toggle-for="chart-nominal">
+          <button type="button" data-chart-type="bar" aria-pressed="true">Batang</button>
+          <button type="button" data-chart-type="line" aria-pressed="false">Garis</button>
+        </span>
+      </div>
+      <div class="chart-box" id="chart-nominal" data-chart="gdp-nominal" data-type="bar"></div>
+      <p class="chart-source"></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Apa yang mendorong pertumbuhan 2025</h2>
+    <p class="intro">Menurut BPS, pertumbuhan 2025 ditopang konsumsi rumah tangga dan investasi,
+    sementara ekspor tetap terjaga.</p>
+    <ul class="facts">
+      <li><strong>Triwulan IV-2025 tumbuh 5,39% (y-on-y)</strong> — tertinggi sejak masa pascapandemi; 0,86% dibanding triwulan sebelumnya (q-to-q).</li>
+      <li><strong>Konsumsi rumah tangga naik 4,98%</strong> dan Pembentukan Modal Tetap Bruto (PMTB) naik 5,09% sepanjang 2025.</li>
+      <li><strong>PDB per kapita naik dari Rp78,6 juta (2024)</strong> menjadi Rp83,7 juta (2025), atau dari USD 4.960,33 menjadi USD 5.083,4.</li>
+      <li><strong>Inflasi tahun kalender 2025 sebesar 2,92%</strong> — tetap dalam sasaran pemerintah.</li>
+      <li><strong>PDB atas dasar harga konstan 2010</strong> mencapai Rp13.580,5 triliun pada 2025.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>DataNusa</strong> — situs statistik Indonesia yang independen. Semua angka bersumber dari Badan Pusat Statistik (BPS) dan dicantumkan sumber serta tahunnya di setiap tampilan.</p>
+    <p>DataNusa bukan situs resmi BPS. Untuk data mentah dan publikasi lengkap, kunjungi bps.go.id.</p>
+    <p>Data diperbarui 26 November 2026.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

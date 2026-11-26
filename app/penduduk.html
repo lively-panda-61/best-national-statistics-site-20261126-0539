@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kependudukan — DataNusa · Statistik Indonesia</title>
+<meta name="description" content="Jumlah, pertumbuhan, dan sebaran penduduk Indonesia dari BPS dan SUPAS 2025.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<span>Nusa</span></a>
+    <span class="tagline">Statistik Indonesia, satu pintu</span>
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="penduduk.html">Kependudukan</a>
+      <a href="sosial.html">Sosial</a>
+      <a href="perdagangan.html">Perdagangan</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Kependudukan Indonesia</h1>
+    <p class="lede">Penduduk Indonesia mencapai 284,67 juta jiwa menurut Survei Penduduk Antar Sensus
+    (SUPAS) 2025 — naik dari 270,20 juta pada Sensus Penduduk 2020, dengan laju pertumbuhan
+    yang melambat menjadi 1,08 persen per tahun.</p>
+    <p class="updated">Sumber: BPS, Hasil Survei Penduduk Antar Sensus 2025 (rilis 5 Mei 2026).</p>
+  </div>
+
+  <div class="kpi-grid" aria-label="Angka utama kependudukan">
+    <div class="kpi">
+      <div class="kpi-label">Penduduk 2025</div>
+      <div class="kpi-value">284,67 <span class="kpi-unit">juta jiwa</span></div>
+      <div class="kpi-source">BPS, SUPAS 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Laju pertumbuhan</div>
+      <div class="kpi-value">1,08 <span class="kpi-unit">% per tahun</span></div>
+      <div class="kpi-source">BPS, 2020–2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Tinggal di Jawa</div>
+      <div class="kpi-value">55,65 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, SUPAS 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Rasio ketergantungan</div>
+      <div class="kpi-value">45,05</div>
+      <div class="kpi-source">BPS, SUPAS 2025</div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Pertumbuhan penduduk</h2>
+    <div class="card">
+      <h3>Jumlah penduduk, 2010–2025 (juta jiwa)</h3>
+      <div class="controls">
+        <span class="toggle-group" data-toggle-for="chart-population">
+          <button type="button" data-chart-type="bar" aria-pressed="true">Batang</button>
+          <button type="button" data-chart-type="line" aria-pressed="false">Garis</button>
+        </span>
+        <button type="button" class="text-button" data-table-toggle="table-population" aria-expanded="false">Tampilkan tabel data</button>
+      </div>
+      <div class="chart-box" id="chart-population" data-chart="population" data-type="bar"></div>
+      <p class="chart-source"></p>
+      <table class="data hidden" id="table-population">
+        <thead><tr><th>Tahun</th><th class="num">Penduduk (juta jiwa)</th><th>Sumber</th></tr></thead>
+        <tbody>
+          <tr><td>2010</td><td class="num">237,64</td><td>Sensus Penduduk 2010</td></tr>
+          <tr><td>2015</td><td class="num">255,18</td><td>SUPAS 2015</td></tr>
+          <tr><td>2020</td><td class="num">270,20</td><td>Sensus Penduduk 2020</td></tr>
+          <tr><td>2025</td><td class="num">284,67</td><td>SUPAS 2025</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Struktur penduduk 2025</h2>
+    <ul class="facts">
+      <li><strong>Indonesia didominasi penduduk muda:</strong> sekitar 46,9% penduduk berusia di bawah 30 tahun (BPS, 2025).</li>
+      <li><strong>Gen Z, Milenial, dan pasca-Gen Z mencapai 68,98%</strong> dari penduduk — sebagian besar berusia 44 tahun ke bawah (BPS, SUPAS 2025).</li>
+      <li><strong>Jawa Barat adalah provinsi terpadat</strong> dengan 50,8 juta penduduk pada 2025 (BPS).</li>
+      <li><strong>Rasio ketergantungan 45,05:</strong> setiap 100 penduduk usia produktif menanggung sekitar 45 penduduk usia nonproduktif (BPS, SUPAS 2025).</li>
+      <li><strong>Kepadatan sekitar 149 jiwa per km²</strong> — dihitung dari 284,67 juta jiwa dibagi luas daratan 1.904.569 km² (BPS).</li>
+      <li><strong>Laju pertumbuhan melambat:</strong> 1,08% per tahun pada 2020–2025, turun dari 1,10% pada periode sebelumnya (BPS).</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>DataNusa</strong> — situs statistik Indonesia yang independen. Semua angka bersumber dari Badan Pusat Statistik (BPS) dan dicantumkan sumber serta tahunnya di setiap tampilan.</p>
+    <p>DataNusa bukan situs resmi BPS. Untuk data mentah dan publikasi lengkap, kunjungi bps.go.id.</p>
+    <p>Data diperbarui 26 November 2026.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

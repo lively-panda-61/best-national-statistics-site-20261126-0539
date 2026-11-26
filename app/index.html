@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataNusa — Statistik Indonesia, Satu Pintu</title>
+<meta name="description" content="Angka-angka penting Indonesia dari BPS: penduduk, PDB, inflasi, pengangguran, kemiskinan, perdagangan, dan pembangunan manusia.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Data<span>Nusa</span></a>
+    <span class="tagline">Statistik Indonesia, satu pintu</span>
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="ekonomi.html">Ekonomi</a>
+      <a href="penduduk.html">Kependudukan</a>
+      <a href="sosial.html">Sosial</a>
+      <a href="perdagangan.html">Perdagangan</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Indonesia dalam angka — nyata, bersumber, dan terbaru.</h1>
+    <p class="lede">DataNusa mengumpulkan angka-angka penting Indonesia dari Badan Pusat Statistik (BPS):
+    berapa penduduknya, seberapa besar ekonominya, dan bagaimana hidup warganya — masing-masing
+    dengan sumber dan tahunnya, supaya Anda bisa mengutip dengan percaya diri.</p>
+    <p class="updated">Data diperbarui 26 November 2026 · Semua angka bersumber dari BPS.</p>
+  </div>
+
+  <div class="kpi-grid" aria-label="Angka utama">
+    <div class="kpi">
+      <div class="kpi-label">Penduduk</div>
+      <div class="kpi-value">284,67 <span class="kpi-unit">juta jiwa</span></div>
+      <div class="kpi-source">BPS, SUPAS 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">PDB 2025</div>
+      <div class="kpi-value">Rp23.821 <span class="kpi-unit">triliun</span></div>
+      <div class="kpi-source">BPS, Pertumbuhan Ekonomi 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Pertumbuhan ekonomi</div>
+      <div class="kpi-value">5,11 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, 2025 (c-to-c)</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">PDB per kapita</div>
+      <div class="kpi-value">USD 5.083</div>
+      <div class="kpi-source">BPS, 2025 · Rp83,7 juta</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Inflasi 2025</div>
+      <div class="kpi-value">2,92 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, tahun kalender</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Pengangguran terbuka</div>
+      <div class="kpi-value">4,85 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, Sakernas Agustus 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Penduduk miskin</div>
+      <div class="kpi-value">8,25 <span class="kpi-unit">%</span></div>
+      <div class="kpi-source">BPS, September 2025</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Surplus perdagangan</div>
+      <div class="kpi-value">USD 41,05 <span class="kpi-unit">miliar</span></div>
+      <div class="kpi-source">BPS, 2025</div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Sekilas: ekonomi dan penduduk</h2>
+    <p class="intro">Dua grafik yang paling sering dicari: laju pertumbuhan ekonomi lima tahun terakhir
+    dan pertumbuhan penduduk dari sensus ke sensus. Ubah tampilan grafik dengan tombol di bawah judul.</p>
+
+    <div class="card">
+      <h3>Pertumbuhan ekonomi, 2021–2025</h3>
+      <div class="controls">
+        <span class="toggle-group" data-toggle-for="chart-growth">
+          <button type="button" data-chart-type="bar" aria-pressed="true">Batang</button>
+          <button type="button" data-chart-type="line" aria-pressed="false">Garis</button>
+        </span>
+        <button type="button" class="text-button" data-table-toggle="table-growth" aria-expanded="false">Tampilkan tabel data</button>
+      </div>
+      <div class="chart-box" id="chart-growth" data-chart="gdp-growth" data-type="bar"></div>
+      <p class="chart-source"></p>
+      <table class="data hidden" id="table-growth">
+        <thead><tr><th>Tahun</th><th class="num">Pertumbuhan (%)</th></tr></thead>
+        <tbody>
+          <tr><td>2021</td><td class="num">3,70</td></tr>
+          <tr><td>2022</td><td class="num">5,31</td></tr>
+          <tr><td>2023</td><td class="num">5,05</td></tr>
+          <tr><td>2024</td><td class="num">5,03</td></tr>
+          <tr><td>2025</td><td class="num">5,11</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Jumlah penduduk, 2010–2025</h3>
+      <div class="controls">
+        <span class="toggle-group" data-toggle-for="chart-population">
+          <button type="button" data-chart-type="bar" aria-pressed="true">Batang</button>
+          <button type="button" data-chart-type="line" aria-pressed="false">Garis</button>
+        </span>
+        <button type="button" class="text-button" data-table-toggle="table-population" aria-expanded="false">Tampilkan tabel data</button>
+      </div>
+      <div class="chart-box" id="chart-population" data-chart="population" data-type="bar"></div>
+      <p class="chart-source"></p>
+      <table class="data hidden" id="table-population">
+        <thead><tr><th>Tahun</th><th class="num">Penduduk (juta jiwa)</th><th>Sumber</th></tr></thead>
+        <tbody>
+          <tr><td>2010</td><td class="num">237,64</td><td>Sensus Penduduk 2010</td></tr>
+          <tr><td>2015</td><td class="num">255,18</td><td>SUPAS 2015</td></tr>
+          <tr><td>2020</td><td class="num">270,20</td><td>Sensus Penduduk 2020</td></tr>
+          <tr><td>2025</td><td class="num">284,67</td><td>SUPAS 2025</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Cari indikator</h2>
+    <p class="intro">Ketik kata kunci — misalnya “inflasi”, “ekspor”, atau “IPM” — untuk menemukan
+    indikatornya beserta angka, satuan, dan sumbernya.</p>
+    <div class="search-box">
+      <input type="search" id="indicator-search" placeholder="Cari indikator, mis. inflasi…" aria-label="Cari indikator">
+    </div>
+    <ul class="index" id="indicator-index"></ul>
+    <p class="note hidden" id="indicator-index-empty">Tidak ada indikator yang cocok dengan pencarian Anda.</p>
+  </section>
+
+  <section class="block">
+    <h2>Cara membaca situs ini</h2>
+    <p class="intro">Setiap angka di DataNusa mencantumkan sumber dan tahunnya. Angka “2025” berarti
+    angka itu mengukur tahun 2025, bukan tahun situs ini dibuat. Bila dua rilis BPS memberi angka
+    yang sedikit berbeda untuk hal yang sama, kami memakai rilis yang terbaru dan menyebutkannya.</p>
+    <ul class="facts">
+      <li><strong>PDB per kapita menembus USD 5.000</strong> untuk pertama kalinya pada 2025 — USD 5.083,4 menurut BPS.</li>
+      <li><strong>Surplus perdagangan sudah 68 bulan beruntun</strong> sejak Mei 2020, mencapai USD 41,05 miliar pada 2025.</li>
+      <li><strong>IPM 75,90 pada 2025</strong> — kategori “tinggi”, naik 0,88 poin dari 75,02 pada 2024.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>DataNusa</strong> — situs statistik Indonesia yang independen. Semua angka bersumber dari Badan Pusat Statistik (BPS) dan dicantumkan sumber serta tahunnya di setiap tampilan.</p>
+    <p>DataNusa bukan situs resmi BPS. Untuk data mentah dan publikasi lengkap, kunjungi bps.go.id.</p>
+    <p>Data diperbarui 26 November 2026.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
